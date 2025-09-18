@@ -1,0 +1,23 @@
+{
+  "run_dir": "..\\outputs\\logs\\run_20250918_030020",
+  "timestamp": "20250918_030020",
+  "args": {
+    "data_path": "../data/census-bureau.data",
+    "columns_path": "../data/census-bureau.columns",
+    "models_dir": "../models",
+    "outputs_dir": "../outputs",
+    "test_size": 0.2,
+    "random_state": 42,
+    "models": [
+      "sgd",
+      "rf",
+      "xgb",
+      "lgbm",
+      "cat"
+    ],
+    "target_precision": 0.7,
+    "save_models": true,
+    "metrics_out": "..\\outputs\\logs\\run_20250918_030020\\metrics.json",
+    "run_name": ""
+  }
+}

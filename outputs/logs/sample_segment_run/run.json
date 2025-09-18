@@ -1,0 +1,19 @@
+{
+  "run_dir": "..\\outputs\\logs\\run_20250918_031859",
+  "timestamp": "20250918_031859",
+  "args": {
+    "data_path": "../data/census-bureau.data",
+    "columns_path": "../data/census-bureau.columns",
+    "models_dir": "../models",
+    "outputs_dir": "../outputs",
+    "k": 0,
+    "k_min": 3,
+    "k_max": 9,
+    "random_state": 42,
+    "segments_out": "..\\outputs\\logs\\run_20250918_031859\\segments.csv",
+    "summary_out": "..\\outputs\\logs\\run_20250918_031859\\summary.json",
+    "profile_topn": 6,
+    "save_models": true,
+    "run_name": ""
+  }
+}

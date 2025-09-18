@@ -1,0 +1,103 @@
+Shape: (199523, 42)
+Target counts:
+ label
+- 50000.    187141
+50000+.      12382
+Name: count, dtype: int64
+pos_factor used in training: 14.644
+
+== SGD Logistic ==
+ROC-AUC_w=0.812 | PR-AUC_w=0.196 | Thr*=0.000
+              precision    recall  f1-score   support
+
+           0      0.985     0.807     0.887 64953101.679999925
+           1      0.226     0.817     0.354 4483480.5600000145
+
+    accuracy                          0.807 69436582.23999994
+   macro avg      0.605     0.812     0.620 69436582.23999994
+weighted avg      0.936     0.807     0.852 69436582.23999994
+
+Saved figures for SGD Logistic: {'roc': '..\\outputs\\logs\\run_20250918_030020\\figs\\SGD Logistic_ROC_20250918_030020.png', 'pr': '..\\outputs\\logs\\run_20250918_030020\\figs\\SGD Logistic_PR_20250918_030020.png'}
+
+== RandomForest ==
+ROC-AUC_w=0.941 | PR-AUC_w=0.595 | Thr*=0.720
+              precision    recall  f1-score   support
+
+           0      0.975     0.954     0.965 64953101.679999925
+           1      0.494     0.647     0.560 4483480.5600000145
+
+    accuracy                          0.934 69436582.23999994
+   macro avg      0.734     0.800     0.762 69436582.23999994
+weighted avg      0.944     0.934     0.938 69436582.23999994
+
+Saved figures for RandomForest: {'roc': '..\\outputs\\logs\\run_20250918_030020\\figs\\RandomForest_ROC_20250918_030020.png', 'pr': '..\\outputs\\logs\\run_20250918_030020\\figs\\RandomForest_PR_20250918_030020.png'}
+
+== XGBoost ==
+ROC-AUC_w=0.955 | PR-AUC_w=0.690 | Thr*=0.838
+              precision    recall  f1-score   support
+
+           0      0.976     0.972     0.974 64953101.679999925
+           1      0.614     0.654     0.633 4483480.5600000145
+
+    accuracy                          0.951 69436582.23999994
+   macro avg      0.795     0.813     0.804 69436582.23999994
+weighted avg      0.953     0.951     0.952 69436582.23999994
+
+Saved figures for XGBoost: {'roc': '..\\outputs\\logs\\run_20250918_030020\\figs\\XGBoost_ROC_20250918_030020.png', 'pr': '..\\outputs\\logs\\run_20250918_030020\\figs\\XGBoost_PR_20250918_030020.png'}
+
+XGBoost threshold @ precision>=0.70: 0.895
+              precision    recall  f1-score   support
+
+           0      0.968     0.984     0.976 64953101.679999925
+           1      0.700     0.536     0.607 4483480.5600000145
+
+    accuracy                          0.955 69436582.23999994
+   macro avg      0.834     0.760     0.792 69436582.23999994
+weighted avg      0.951     0.955     0.952 69436582.23999994
+
+[LightGBM] [Info] Number of positive: 9906, number of negative: 149712
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.041618 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 2123
+[LightGBM] [Info] Number of data points in the train set: 159618, number of used features: 498
+[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=-0.000000
+[LightGBM] [Info] Start training from score -0.000000
+
+== LightGBM ==
+ROC-AUC_w=0.955 | PR-AUC_w=0.697 | Thr*=0.817
+              precision    recall  f1-score   support
+
+           0      0.978     0.968     0.973 64953101.679999925
+           1      0.595     0.678     0.633 4483480.5600000145
+
+    accuracy                          0.949 69436582.23999994
+   macro avg      0.786     0.823     0.803 69436582.23999994
+weighted avg      0.953     0.949     0.951 69436582.23999994
+
+Saved figures for LightGBM: {'roc': '..\\outputs\\logs\\run_20250918_030020\\figs\\LightGBM_ROC_20250918_030020.png', 'pr': '..\\outputs\\logs\\run_20250918_030020\\figs\\LightGBM_PR_20250918_030020.png'}
+
+== CatBoost ==
+ROC-AUC_w=0.956 | PR-AUC_w=0.688 | Thr*=0.837
+              precision    recall  f1-score   support
+
+           0      0.976     0.971     0.974 64953101.679999925
+           1      0.611     0.651     0.630 4483480.5600000145
+
+    accuracy                          0.951 69436582.23999994
+   macro avg      0.794     0.811     0.802 69436582.23999994
+weighted avg      0.952     0.951     0.951 69436582.23999994
+
+Saved figures for CatBoost: {'roc': '..\\outputs\\logs\\run_20250918_030020\\figs\\CatBoost_ROC_20250918_030020.png', 'pr': '..\\outputs\\logs\\run_20250918_030020\\figs\\CatBoost_PR_20250918_030020.png'}
+
+Summary (sorted by PR-AUC_w):
+LightGBM     | ROC-AUC_w=0.955458 | PR-AUC_w=0.697184 | Thr*=0.817
+XGBoost      | ROC-AUC_w=0.955252 | PR-AUC_w=0.690145 | Thr*=0.838
+CatBoost     | ROC-AUC_w=0.955694 | PR-AUC_w=0.688223 | Thr*=0.837
+RandomForest | ROC-AUC_w=0.941362 | PR-AUC_w=0.594886 | Thr*=0.720
+SGD Logistic | ROC-AUC_w=0.811903 | PR-AUC_w=0.196320 | Thr*=0.000
+
+Saved metrics to ..\outputs\logs\run_20250918_030020\metrics.json
+Log folder: ..\outputs\logs\run_20250918_030020
+Figures folder: ..\outputs\logs\run_20250918_030020\figs
+Log file: ..\outputs\logs\run_20250918_030020\classifier.log

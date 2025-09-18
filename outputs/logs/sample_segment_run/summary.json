@@ -1,0 +1,56 @@
+[
+  {
+    "cluster":1,
+    "weighted_share":0.2626604318,
+    "weighted_pos_rate":0.0,
+    "mean_age":8.1328633799,
+    "mean_weeks worked in year":0.2250289233,
+    "mean_wage per hour":0.1427148607,
+    "mean_num persons worked for employer":0.0550822473
+  },
+  {
+    "cluster":2,
+    "weighted_share":0.2170503737,
+    "weighted_pos_rate":0.0669820614,
+    "mean_age":36.884791839,
+    "mean_weeks worked in year":43.7267879836,
+    "mean_wage per hour":114.6829661626,
+    "mean_num persons worked for employer":3.6248135625
+  },
+  {
+    "cluster":0,
+    "weighted_share":0.2163868742,
+    "weighted_pos_rate":0.0770158535,
+    "mean_age":37.1105570877,
+    "mean_weeks worked in year":44.354857287,
+    "mean_wage per hour":111.4143568531,
+    "mean_num persons worked for employer":3.7615241354
+  },
+  {
+    "cluster":3,
+    "weighted_share":0.1849314001,
+    "weighted_pos_rate":0.0067387376,
+    "mean_age":56.0283423114,
+    "mean_weeks worked in year":1.4400609827,
+    "mean_wage per hour":0.0,
+    "mean_num persons worked for employer":0.2397431218
+  },
+  {
+    "cluster":4,
+    "weighted_share":0.0818512839,
+    "weighted_pos_rate":0.2358708024,
+    "mean_age":50.6473139817,
+    "mean_weeks worked in year":33.045413354,
+    "mean_wage per hour":65.6042772088,
+    "mean_num persons worked for employer":2.8610963791
+  },
+  {
+    "cluster":5,
+    "weighted_share":0.0371196364,
+    "weighted_pos_rate":0.3312043907,
+    "mean_age":48.342507689,
+    "mean_weeks worked in year":39.427063922,
+    "mean_wage per hour":79.6915274677,
+    "mean_num persons worked for employer":3.239578473
+  }
+]

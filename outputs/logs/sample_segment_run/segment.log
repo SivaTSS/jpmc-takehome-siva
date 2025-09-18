@@ -1,0 +1,20 @@
+Feature matrix shape: (199523, 483)
+Elbow inertias: {3: 6148204184.921318, 4: 5345945226.915219, 5: 4911083502.867549, 6: 4538441774.899248, 7: 4221824342.068879, 8: 4029556059.9264407, 9: 3850307734.110748}
+Elbow suggested k=8
+Following notebook: overriding to k=6 (Elbow suggested k=8)
+Saved segments to ..\outputs\logs\run_20250918_031859\segments.csv
+
+KMeans segments (k=6) - weighted
+ cluster  weighted_share  weighted_pos_rate  mean_age  mean_weeks worked in year  mean_wage per hour  mean_num persons worked for employer
+       1        0.262660           0.000000  8.132863                   0.225029            0.142715                              0.055082
+       2        0.217050           0.066982 36.884792                  43.726788          114.682966                              3.624814
+       0        0.216387           0.077016 37.110557                  44.354857          111.414357                              3.761524
+       3        0.184931           0.006739 56.028342                   1.440061            0.000000                              0.239743
+       4        0.081851           0.235871 50.647314                  33.045413           65.604277                              2.861096
+       5        0.037120           0.331204 48.342508                  39.427064           79.691527                              3.239578
+Saved summary to ..\outputs\logs\run_20250918_031859\summary.json
+Skipping model save: Can't pickle <function _build_preprocessor.<locals>.<lambda> at 0x000001F081D9DF80>: it's not found as __main__._build_preprocessor.<locals>.<lambda>
+
+Log folder: ..\outputs\logs\run_20250918_031859
+Figures folder: ..\outputs\logs\run_20250918_031859\figs
+Log file: ..\outputs\logs\run_20250918_031859\segment.log
